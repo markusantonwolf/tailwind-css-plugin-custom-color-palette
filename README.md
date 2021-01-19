@@ -1,6 +1,6 @@
-# Tailwind CSS Plugin for dynamic generated shades for your customized color palettes
+# Tailwind CSS Plugin for dynamic generated variants for your customized color palettes
 
-This Tailwind CSS plugin generates all shade variants and utilities for your customized color palette.
+This Tailwind CSS plugin generates all shade variants from -50 to -950 and utilities for your customized color palette.
 
 **Compatibility: Tailwind CSS 1.9.6 and ^2.X.**
 
@@ -23,95 +23,74 @@ yarn add -D @markusantonwolf/tailwind-css-plugin-custom-color-palette
 module.exports = {
     // ...
     plugins: [
-        require('@markusantonwolf/tailwind-css-plugin-custom-color-palette')({
+        require("@markusantonwolf/tailwind-css-plugin-custom-color-palette")({
             colors: {
-                teal: '#408075',
-                moreColors: '#FF00FF',
+                yourColor: "#408075",
             },
-            variants: ["responsive"],
-            steps: 100,
         }),
-    ]
-}
+    ],
+};
 ```
 
 ### 3. Use it > 🌮
 
 ## Usage
 
-**The Tailwind CSS Custom Color Palette plugin generates all new utilities like `.bg-teal-400`, `.text-teal-200` or `.border-teal-700` based on your defined colors.**
+**The Tailwind CSS Custom Color Palette plugin generates new utilities like `.bg-teal-400`, `.text-teal-200` or `.border-teal-700` based on your defined colors.**
 
-By Default this Multi Column plugin uses your theme and colors so you don't have to redefine your settings. Variants apply for columns and column rules - default variant is "responsive". To change rendered variants add your configuration to the required plugin:
+You can learn more about all configurations in: [More configurations](#user-content-more-configurations). You can find all variants in the Tailwind CSS documentation: [Tailwind CSS - Configuring Variants](https://tailwindcss.com/docs/configuring-variants).
+
+### Examples
+
+```html
+<h1 class="text-teal-600">
+    <!-- Content -->
+</h1>
+```
+
+```html
+<div class="bg-teal-400 p-8 border-2 border-teal-300 border-dashed">
+    <!-- Content -->
+</div>
+```
+
+```html
+<div class="bg-gradient-to-b from-teal-100 to-teal-200">
+    <!-- Content -->
+</div>
+```
+
+**You can find a list of all generated utilities based on the default settings here - [Custom Color utilities](https://github.com/markusantonwolf/tailwind-css-plugin-custom-color-palette/blob/master/dist/custom-color-palette.css)**
+
+### Configurations
+
+In the following example you can see all available options (default values) for the Custom Color Palette plugin. To overwrite the default object like `variants` are your own settings to the plugin. Your new settings will get merged with the default settings.
 
 ```js
 // tailwind.config.js
 module.exports = {
     // ...
     plugins: [
-        require('@markusantonwolf/tailwind-css-plugin-multi-columns')({
-            variants: ["responsive", "dark"],
+        require("@markusantonwolf/ta-youtube")({
+            colors: {
+                teal: "#408075", // add more colors to the plugin
+            },
+            utilities: {
+                textColor: true, // render text color utilities: true (default) | false
+                backgroundColor: true, // render background color utilities: true (default) | false
+                borderColor: true, // render border color utilities: true (default) | false
+                gradientColorStops: true, // render gradient color utilities: true (default) | false
+                placeholderColor: true, // render placeholder color utilities: true (default) | false
+                divideColor: true, // render divide color utilities: true (default) | false
+                ringColor: true, // render ring color utilities: true (default) | false
+                ringOffsetColor: true, // render ring offset color utilities: true (default) | false
+            },
+            variants: ["responsive"], // default variante is responsive
+            steps: 100, // define the steps between each shade: 100 (default) | 50
+            calculation: "relative", // change color calulation: relative (default) | linear
         }),
-    ]
-}
-```
-
-You can learn more about all configurations in: [More configurations](#user-content-more-configurations). You can find all variants in the Tailwind CSS documentation: [Tailwind CSS - Configuring Variants](https://tailwindcss.com/docs/configuring-variants). 
-
-## Examples
-
-```html
-<div class="column-2 column-gap-12 rule rule-dashed rule-gray-500">
-    <!-- Content -->
-</div>
-```
-
-```html
-<div class="sm:column-2 xl:column-3 sm:column-gap-12 xl:column-gap-24 rule xl:rule-2 rule-dashed rule-gray-900 rule-opacity-50">
-    <!-- Content -->
-</div>
-```
-
-```html
-<div class="md:column-2 xl:column-3 2xl:column-4 column-gap-12 xl:rule-2 rule-dotted rule-gray-300">
-    <!-- Content -->
-</div>
-```
-
-With this Tailwind CSS Plugin you can easily the following multi-column properties:
-
-- column-count
-- column-gap
-- column-rule-style
-- column-rule-width
-- column-rule-color
-- column-rule
-- column-span
-- column-width
-
-**You can find a list of all generated utilities here - [All Multi Column utilities](https://github.com/markusantonwolf/tailwind-css-plugin-multi-columns/blob/master/dist/multi-columns.css)**
-
-## More configurations
-
-In the following example you can see all available options (default values) for the Multi Column plugin. The params `variants`, `styles` and `columns` are replacing the configuration and the other params will get merged with your Tailwind CSS theme.
-
-```js
-// tailwind.config.js
-module.exports = {
-    // ...
-    plugins: [
-        require('@markusantonwolf/tailwind-css-plugin-multi-columns')({
-            variants: ["responsive"], // replaces definitions
-            styles: ["dotted", "solid", "dashed"], // replaces definitions
-            columns: ["2", "3", "4", "5", "6", "7", "8", "9"], // replaces definitions
-            span: [], // merges definitions
-            gaps: [], // merges definitions
-            spacing: [], // merges definitions
-            colors: [], // merges definitions
-            borderWidth: [], // merges definitions
-            opacity: [], // merges definitions
-        }),
-    ]
-}
+    ],
+};
 ```
 
 ## Licence
