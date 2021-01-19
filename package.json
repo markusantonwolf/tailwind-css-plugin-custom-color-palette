@@ -1,7 +1,7 @@
 {
     "name": "@markusantonwolf/tailwind-css-plugin-custom-color-palette",
     "version": "1.0.0",
-    "description": "This Tailwind CSS plugin generates all shade variants and utilities for your customized color palette.",
+    "description": "This Plugin generates a color palette and all utilities based on your custom colors. New utilities like text-yourColor-100 or bg-yourColor-600 will be rendered for your custom colors.",
     "main": "src/index.js",
     "scripts": {
         "test": "NODE_ENV=test node ./src/index.js",
