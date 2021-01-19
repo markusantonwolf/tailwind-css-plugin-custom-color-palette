@@ -33,13 +33,13 @@ function buildDistFile() {
       `,
                 {
                     from: undefined,
-                    to: `./dist/tailwind-custom-color-palette.css`,
+                    to: `./public/tailwind-custom-color-palette.css`,
                     map: { inline: false },
                 }
             )
             .then((result) => {
                 fs.writeFileSync(
-                    `./dist/tailwind-custom-color-palette.css`,
+                    `./public/tailwind-custom-color-palette.css`,
                     result.css
                 );
                 return result;
@@ -47,7 +47,7 @@ function buildDistFile() {
             .then((result) => {
                 const minified = new CleanCSS().minify(result.css);
                 fs.writeFileSync(
-                    `./dist/tailwind-custom-color-palette.min.css`,
+                    `./public/tailwind-custom-color-palette.min.css`,
                     minified.styles
                 );
             })

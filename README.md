@@ -1,8 +1,8 @@
-# Tailwind CSS Plugin for dynamic generated variants for your customized color palettes
+# Tailwind CSS Custom Color Palette
 
-This Tailwind CSS plugin generates all shade variants from -50 to -950 and utilities for your customized color palette.
+**This Plugin generates a color palette and all utilities based on your custom colors. New utilities like ```text-yourColor-100``` or ```bg-yourColor-600``` will be rendered for your custom colors.**
 
-**Compatibility: Tailwind CSS 1.9.6 and ^2.X.**
+**Compatibility: Tailwind CSS ^1.8.3 and ^2.X.**
 
 ## Installation
 
@@ -36,26 +36,26 @@ module.exports = {
 
 ## Usage
 
-**The Tailwind CSS Custom Color Palette plugin generates new utilities like `.bg-teal-400`, `.text-teal-200` or `.border-teal-700` based on your defined colors.**
+**The Tailwind CSS Custom Color Palette plugin generates new utilities like `.bg-yourColor-400`, `.text-yourColor-200` or `.border-yourColor-700` based on your defined colors. Your defined color will be used as -500 variante.**
 
 You can learn more about all configurations in: [More configurations](#user-content-more-configurations). You can find all variants in the Tailwind CSS documentation: [Tailwind CSS - Configuring Variants](https://tailwindcss.com/docs/configuring-variants).
 
 ### Examples
 
 ```html
-<h1 class="text-teal-600">
+<h1 class="text-yourColor-600">
     <!-- Content -->
 </h1>
 ```
 
 ```html
-<div class="bg-teal-400 p-8 border-2 border-teal-300 border-dashed">
+<div class="bg-yourColor-200 p-8 border-2 border-yourColor-700 border-dashed">
     <!-- Content -->
 </div>
 ```
 
 ```html
-<div class="bg-gradient-to-b from-teal-100 to-teal-200">
+<div class="bg-gradient-to-b from-yourColor-100 to-yourColor-200">
     <!-- Content -->
 </div>
 ```
