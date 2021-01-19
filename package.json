@@ -1,0 +1,53 @@
+{
+    "name": "@markusantonwolf/tailwind-css-plugin-custom-color-palette",
+    "version": "1.0.0",
+    "description": "This Tailwind CSS plugin generates all shade variants and utilities for your customized color palette.",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "NODE_ENV=test node ./src/index.js",
+        "build": "node ./scripts/build.js",
+        "publish": "npm publish --access public",
+        "patch": "npm version patch",
+        "minor": "npm version minor",
+        "major": "npm version major"
+    },
+    "author": {
+        "name": "Markus A. Wolf",
+        "email": "hello@markusantonwolf.com",
+        "url": "https://www.markusantonwolf.com/en/"
+    },
+    "homepage": "https://github.com/markusantonwolf/tailwind-css-plugin-custom-color-palette#readme",
+    "bugs": {
+        "url": "https://github.com/markusantonwolf/tailwind-css-plugin-custom-color-palette/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/markusantonwolf/tailwind-css-plugin-custom-color-palette.git"
+    },
+    "license": "MIT",
+    "keywords": [
+        "tailwindcss",
+        "css",
+        "tailwind",
+        "color",
+        "background-color",
+        "placeholder-color",
+        "border-color",
+        "palette",
+        "customizing",
+        "dynamic"
+    ],
+    "dependencies": {
+        "lodash": "^4.17.20",
+        "change-case": "^4.1.2",
+        "hex-rgb": "^4.2.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "clean-css": "^4.2.1",
+        "tailwindcss": "^1.9.6"
+    },
+    "peerDependencies": {
+        "tailwindcss": "^1.8.3 || ^2.0.0"
+    }
+}
