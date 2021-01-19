@@ -1,6 +1,6 @@
 # Tailwind CSS Custom Color Palette
 
-**This Plugin generates a color palette and all utilities based on your custom colors. New utilities like ```text-yourColor-100``` or ```bg-yourColor-600``` will be rendered for your custom colors.**
+**This Plugin generates a color palette and all utilities based on your custom colors. New utilities like `text-yourColor-100` or `bg-yourColor-600` will be rendered for your custom colors.**
 
 **Compatibility: Tailwind CSS ^1.8.3 and ^2.X.**
 
@@ -36,9 +36,7 @@ module.exports = {
 
 ## Usage
 
-**The Tailwind CSS Custom Color Palette plugin generates new utilities like `.bg-yourColor-400`, `.text-yourColor-200` or `.border-yourColor-700` based on your defined colors. Your defined color will be used as -500 variante.**
-
-You can learn more about all configurations in: [More configurations](#user-content-more-configurations). You can find all variants in the Tailwind CSS documentation: [Tailwind CSS - Configuring Variants](https://tailwindcss.com/docs/configuring-variants).
+The Tailwind CSS Custom Color Palette plugin generates new utilities like `.bg-yourColor-400`, `.text-yourColor-200` or `.border-yourColor-700` based on your defined colors. Every color you defined will be used as -500 variante in the palette.
 
 ### Examples
 
@@ -62,9 +60,9 @@ You can learn more about all configurations in: [More configurations](#user-cont
 
 **You can find a list of all generated utilities based on the default settings here - [Custom Color utilities](https://github.com/markusantonwolf/tailwind-css-plugin-custom-color-palette/blob/master/dist/custom-color-palette.css)**
 
-### Configurations
+### Configuration
 
-In the following example you can see all available options (default values) for the Custom Color Palette plugin. To overwrite the default object like `variants` are your own settings to the plugin. Your new settings will get merged with the default settings.
+In the following example you can see all available options (default values) for the Custom Color Palette plugin. To overwrite the default object like `variants` add your own settings to the plugin. Your new settings will get merged with the default settings.
 
 ```js
 // tailwind.config.js
@@ -87,11 +85,13 @@ module.exports = {
             },
             variants: ["responsive"], // default variante is responsive
             steps: 100, // define the steps between each shade: 100 (default) | 50
-            calculation: "relative", // change color calulation: relative (default) | linear
+            calculation: "relative", // change color calculation: relative (default) | linear
         }),
     ],
 };
 ```
+
+You can find all available variants in the Tailwind CSS documentation: [Tailwind CSS - Configuring Variants](https://tailwindcss.com/docs/configuring-variants).
 
 ## Licence
 
