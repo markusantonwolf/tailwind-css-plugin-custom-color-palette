@@ -11,15 +11,27 @@ function buildDistFile() {
                     container: {
                         center: true,
                     },
+                    customColorPalette: {
+                        colors: {
+                            teal: "#408075",
+                            favorite: "#c23d81",
+                        },
+                        utilities: {},
+                        steps: 50,
+                    },
+                },
+                variants: {
+                    customColorPalette: [
+                        "responsive",
+                        "hover",
+                        "active",
+                        "focus",
+                    ],
                 },
                 plugins: [
                     require("../src/index.js")({
-                        colors: {
-                            teal: '#408075',
-                            favorite: '#c23d81',
-                        },
-                        variants: ["responsive"],
-                        steps: 50,
+                        respectPrefix: false,
+                        respectImportant: false,
                     }),
                 ],
             }),

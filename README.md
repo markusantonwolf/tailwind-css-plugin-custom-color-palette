@@ -22,12 +22,16 @@ yarn add -D @markusantonwolf/tailwind-css-plugin-custom-color-palette
 // tailwind.config.js
 module.exports = {
     // ...
-    plugins: [
-        require("@markusantonwolf/tailwind-css-plugin-custom-color-palette")({
+    theme: {
+        customColorPalette: {
             colors: {
-                yourColor: "#408075",
+                teal: "#408075", // add more colors to the plugin
             },
-        }),
+        },
+    }
+    // ...
+    plugins: [
+        require("@markusantonwolf/tailwind-css-plugin-custom-color-palette"),
     ],
 };
 ```
@@ -62,14 +66,15 @@ The Tailwind CSS Custom Color Palette plugin generates new utilities like `.bg-y
 
 ### Configuration
 
-In the following example you can see all available options (default values) for the Custom Color Palette plugin. To overwrite the default object like `variants` add your own settings to the plugin. Your new settings will get merged with the default settings.
+In the following example you can see all available options (default values) for the Custom Color Palette plugin. To add your own configuration add ```customColorPalette```to ```theme```and ```variants```. Your new settings will be merged with the default settings. To change the plugin behaviour in terms of how it adds the new classes as utilities you can add these options as objects to the default function.
 
 ```js
 // tailwind.config.js
 module.exports = {
     // ...
-    plugins: [
-        require("@markusantonwolf/ta-youtube")({
+    theme: {
+        // ...
+        customColorPalette: {
             colors: {
                 teal: "#408075", // add more colors to the plugin
             },
@@ -83,11 +88,23 @@ module.exports = {
                 ringColor: true, // render ring color utilities: true (default) | false
                 ringOffsetColor: true, // render ring offset color utilities: true (default) | false
             },
-            variants: ["responsive"], // default variante is responsive
             steps: 100, // define the steps between each shade: 100 (default) | 50
             calculation: "relative", // change color calculation: relative (default) | linear
+        },
+        // ...
+    },
+    variants: {
+        // ...
+        customColorPalette: ["responsive", "hover", "active", "focus"],
+        // ...
+    },
+    plugins: [
+        require("@markusantonwolf/ta-youtube")({
+            respectPrefix: true, // respect prefix option in config: true (default) | false 
+            respectImportant: true, // respect important option in config: true (default) | false 
         }),
     ],
+    // ...
 };
 ```
 
@@ -95,9 +112,9 @@ You can find all available variants in the Tailwind CSS documentation: [Tailwind
 
 ## Licence
 
-Tailwind CSS Plugin Filter utilities is released under the [MIT license](https://github.com/markusantonwolf/tailwind-css-plugin-multi-columns/blob/master/licence.md) & supports modern environments.
+Tailwind CSS Plugin Filter utilities is released under the [MIT license](https://github.com/markusantonwolf/tailwind-css-plugin-custom-color-palette/blob/master/licence.md) & supports modern environments.
 
 ## Copyright
 
 © 2020 Markus A. Wolf
-<https://www.markusantonwolf.com>
+<https://www.markusantonwolf.com/en>
