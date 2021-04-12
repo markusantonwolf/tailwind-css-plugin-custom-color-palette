@@ -2,6 +2,7 @@ const fnc = require("./functions");
 const utilities = require("./utilities");
 const convert = require("color-convert");
 const _ = require("lodash");
+const fs = require("fs");
 
 module.exports = function (options) {
     var new_utilities = {};
@@ -65,46 +66,21 @@ module.exports = function (options) {
         );
     }
 
-    // for (const property in options.utilities) {
-    //     switch (options.utilities[property]) {
-    //         case 'textColor':
-    //             new_utilities = _.merge(new_utilities, utilities.general('text', 'color', new_colors));
-    //             break;
-    //         case 'backgroundColor':
-    //             new_utilities = _.merge(
-    //                 new_utilities,
-    //                 utilities.general('bg', 'backgroundColor', new_colors)
-    //             );
-    //             break;
-    //         case 'borderColor':
-    //             new_utilities = _.merge(
-    //                 new_utilities,
-    //                 utilities.general('border', 'borderColor', new_colors)
-    //             );
-    //             break;
-    //         case 'placeholderColor':
-    //             new_utilities = _.merge(new_utilities, utilities.placeholder(new_colors));
-    //             break;
-    //         case 'gradientColorStops':
-    //             new_utilities = _.merge(new_utilities, utilities.gradientFrom(new_colors));
-    //             new_utilities = _.merge(new_utilities, utilities.gradientTo(new_colors));
-    //             break;
-    //         case 'divideColor':
-    //             new_utilities = _.merge(
-    //                 new_utilities,
-    //                 utilities.general('divide', 'borderColor', new_colors)
-    //             );
-    //             break;
-    //         case 'ringColor':
-    //             new_utilities = _.merge(new_utilities, utilities.ringColor(new_colors));
-    //             break;
-    //         case 'ringOffsetColor':
-    //             new_utilities = _.merge(new_utilities, utilities.ringOffsetColor(new_colors));
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    // }
+    if (options.export !== false) {
+        try {
+            fs.writeFile(
+                options.export,
+                fnc.flattenObject(new_utilities),
+                function (err) {
+                    if (err) {
+                        return console.log(err);
+                    }
+                }
+            );
+        } catch (error) {
+            console.info("Export file is to writable:", options.export);
+        }
+    }
 
     return new_utilities;
 };

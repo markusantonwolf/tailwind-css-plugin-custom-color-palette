@@ -143,111 +143,111 @@
 }
 
 .from-teal-100 {
-	--tw-gradient-from: #C5E2DD;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(197, 226, 221, 1));
-	--gradient-from-color: #C5E2DD;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(197, 226, 221, 1));
+	--tw-gradient-from: rgba(197, 226, 221, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(197, 226, 221, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(197, 226, 221, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(197, 226, 221, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-200 {
-	--tw-gradient-from: #A0CFC7;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(160, 207, 199, 1));
-	--gradient-from-color: #A0CFC7;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(160, 207, 199, 1));
+	--tw-gradient-from: rgba(160, 207, 199, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(160, 207, 199, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(160, 207, 199, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(160, 207, 199, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-300 {
-	--tw-gradient-from: #77BBAF;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(119, 187, 175, 1));
-	--gradient-from-color: #77BBAF;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(119, 187, 175, 1));
+	--tw-gradient-from: rgba(119, 187, 175, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(119, 187, 175, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(119, 187, 175, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(119, 187, 175, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-400 {
-	--tw-gradient-from: #54A698;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(84, 166, 152, 1));
-	--gradient-from-color: #54A698;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(84, 166, 152, 1));
+	--tw-gradient-from: rgba(84, 166, 152, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(84, 166, 152, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(84, 166, 152, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(84, 166, 152, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-500 {
-	--tw-gradient-from: #418176;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(65, 129, 118, 1));
-	--gradient-from-color: #418176;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(65, 129, 118, 1));
+	--tw-gradient-from: rgba(65, 129, 118, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(65, 129, 118, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(65, 129, 118, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(65, 129, 118, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-600 {
-	--tw-gradient-from: #356960;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(53, 105, 96, 1));
-	--gradient-from-color: #356960;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(53, 105, 96, 1));
+	--tw-gradient-from: rgba(53, 105, 96, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(53, 105, 96, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(53, 105, 96, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(53, 105, 96, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-700 {
-	--tw-gradient-from: #29514B;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(41, 81, 75, 1));
-	--gradient-from-color: #29514B;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(41, 81, 75, 1));
+	--tw-gradient-from: rgba(41, 81, 75, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(41, 81, 75, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(41, 81, 75, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(41, 81, 75, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-800 {
-	--tw-gradient-from: #1F3D38;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(31, 61, 56, 1));
-	--gradient-from-color: #1F3D38;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(31, 61, 56, 1));
+	--tw-gradient-from: rgba(31, 61, 56, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(31, 61, 56, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(31, 61, 56, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(31, 61, 56, var(--tw-bg-opacity, 1)));
 }
 
 .from-teal-900 {
-	--tw-gradient-from: #132522;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(19, 37, 34, 1));
-	--gradient-from-color: #132522;
-	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(19, 37, 34, 1));
+	--tw-gradient-from: rgba(19, 37, 34, var(--tw-bg-opacity, 1));
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(19, 37, 34, var(--tw-bg-opacity, 1)));
+	--gradient-from-color: rgba(19, 37, 34, var(--tw-bg-opacity, 1));
+	--gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(19, 37, 34, var(--tw-bg-opacity, 1)));
 }
 
 .to-teal-100 {
-	--tw-gradient-to: #C5E2DD;
-	--gradient-to-color: #C5E2DD;
+	--tw-gradient-to: rgba(197, 226, 221, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(197, 226, 221, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-200 {
-	--tw-gradient-to: #A0CFC7;
-	--gradient-to-color: #A0CFC7;
+	--tw-gradient-to: rgba(160, 207, 199, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(160, 207, 199, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-300 {
-	--tw-gradient-to: #77BBAF;
-	--gradient-to-color: #77BBAF;
+	--tw-gradient-to: rgba(119, 187, 175, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(119, 187, 175, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-400 {
-	--tw-gradient-to: #54A698;
-	--gradient-to-color: #54A698;
+	--tw-gradient-to: rgba(84, 166, 152, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(84, 166, 152, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-500 {
-	--tw-gradient-to: #418176;
-	--gradient-to-color: #418176;
+	--tw-gradient-to: rgba(65, 129, 118, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(65, 129, 118, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-600 {
-	--tw-gradient-to: #356960;
-	--gradient-to-color: #356960;
+	--tw-gradient-to: rgba(53, 105, 96, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(53, 105, 96, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-700 {
-	--tw-gradient-to: #29514B;
-	--gradient-to-color: #29514B;
+	--tw-gradient-to: rgba(41, 81, 75, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(41, 81, 75, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-800 {
-	--tw-gradient-to: #1F3D38;
-	--gradient-to-color: #1F3D38;
+	--tw-gradient-to: rgba(31, 61, 56, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(31, 61, 56, var(--tw-bg-opacity, 1));
 }
 
 .to-teal-900 {
-	--tw-gradient-to: #132522;
-	--gradient-to-color: #132522;
+	--tw-gradient-to: rgba(19, 37, 34, var(--tw-bg-opacity, 1));
+	--gradient-to-color: rgba(19, 37, 34, var(--tw-bg-opacity, 1));
 }
 
 .divide-teal-100 {
@@ -287,39 +287,39 @@
 }
 
 .ring-teal-100 {
-	--tw-ring-color: rgba(197, 226, 221, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(197, 226, 221, var(--tw-ring-opacity));
 }
 
 .ring-teal-200 {
-	--tw-ring-color: rgba(160, 207, 199, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(160, 207, 199, var(--tw-ring-opacity));
 }
 
 .ring-teal-300 {
-	--tw-ring-color: rgba(119, 187, 175, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(119, 187, 175, var(--tw-ring-opacity));
 }
 
 .ring-teal-400 {
-	--tw-ring-color: rgba(84, 166, 152, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(84, 166, 152, var(--tw-ring-opacity));
 }
 
 .ring-teal-500 {
-	--tw-ring-color: rgba(65, 129, 118, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(65, 129, 118, var(--tw-ring-opacity));
 }
 
 .ring-teal-600 {
-	--tw-ring-color: rgba(53, 105, 96, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(53, 105, 96, var(--tw-ring-opacity));
 }
 
 .ring-teal-700 {
-	--tw-ring-color: rgba(41, 81, 75, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(41, 81, 75, var(--tw-ring-opacity));
 }
 
 .ring-teal-800 {
-	--tw-ring-color: rgba(31, 61, 56, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(31, 61, 56, var(--tw-ring-opacity));
 }
 
 .ring-teal-900 {
-	--tw-ring-color: rgba(19, 37, 34, var(--tw-ring-opacity, 1));
+	--tw-ring-color: rgba(19, 37, 34, var(--tw-ring-opacity));
 }
 
 .ring-offset-teal-100 {

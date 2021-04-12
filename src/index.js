@@ -1,5 +1,7 @@
 const plugin = require("tailwindcss/plugin");
 const getColors = require("./colors");
+const fnc = require("./functions");
+const fs = require('fs')
 const _ = require("lodash");
 
 const ccp_config_defaults = {
@@ -15,6 +17,7 @@ const ccp_config_defaults = {
         ringOffsetColor: true,
     },
     calculation: "relative",
+    export: false,
     steps: 100,
 };
 
@@ -26,12 +29,25 @@ if (process.env.NODE_ENV === "test") {
     const options = _.defaults(
         {
             colors: {
-                teal: "#408075",
+                blue: "#0a137f",
+                gray: "#737b80",
             },
+            steps: 50,
+            export: false,
         },
         ccp_config_defaults
     );
-    console.info("colors", getColors(options));
+    const colors = getColors(options);
+    fs.writeFile(
+        "./custom-color-palette.css",
+        fnc.flattenObject(colors),
+        function (err) {
+            if (err) {
+                return console.log(err);
+            }
+        }
+    );
+    console.info("colors", colors);
 }
 
 module.exports = plugin.withOptions((options) => {
