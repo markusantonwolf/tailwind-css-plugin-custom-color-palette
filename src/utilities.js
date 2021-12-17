@@ -129,4 +129,18 @@ module.exports = {
         }
         return new_utilities;
     },
+    outlineColor: (colors) => {
+        var new_utilities = {};
+        for (const property in colors) {
+            const buffer = {};
+            const colorHex = convert.rgb.hex(
+                colors[property][0],
+                colors[property][1],
+                colors[property][2]
+            );
+            buffer['outline-color'] = '#' + colorHex;
+            new_utilities['.outline-' + property] = buffer;
+        }
+        return new_utilities;
+    },
 };

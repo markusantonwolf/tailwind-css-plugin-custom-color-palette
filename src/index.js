@@ -15,6 +15,7 @@ const ccp_config_defaults = {
         divideColor: true,
         ringColor: true,
         ringOffsetColor: true,
+        outlineColor: true,
     },
     calculation: "relative",
     export: false,

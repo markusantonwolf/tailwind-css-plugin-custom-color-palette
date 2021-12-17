@@ -65,6 +65,12 @@ module.exports = function (options) {
             utilities.ringOffsetColor(new_colors)
         );
     }
+    if (options.utilities.outlineColor === true) {
+        new_utilities = _.merge(
+            new_utilities,
+            utilities.outlineColor(new_colors)
+        );
+    }
 
     if (options.export !== false) {
         try {
