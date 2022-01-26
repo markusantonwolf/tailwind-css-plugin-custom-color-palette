@@ -39,16 +39,16 @@
         "dynamic"
     ],
     "dependencies": {
-        "lodash": "^4.17.20",
         "change-case": "^4.1.2",
-        "hex-rgb": "^4.2.0"
+        "hex-rgb": "^4.3.0",
+        "lodash": "^4.17.21"
     },
     "devDependencies": {
-        "autoprefixer": "^9.6.1",
-        "clean-css": "^4.2.1",
+        "autoprefixer": "^9.8.8",
+        "clean-css": "^4.2.4",
         "tailwindcss": "^1.9.6"
     },
     "peerDependencies": {
-        "tailwindcss": "^1.8.3 || ^2.0.0"
+        "tailwindcss": "^1.8.3 || ^2.0.0 || ^3.0.0"
     }
 }

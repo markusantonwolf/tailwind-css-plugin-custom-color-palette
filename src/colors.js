@@ -71,6 +71,12 @@ module.exports = function (options) {
             utilities.outlineColor(new_colors)
         );
     }
+    if (options.utilities.ruleColor === true) {
+        new_utilities = _.merge(
+            new_utilities,
+            utilities.ruleColor(new_colors)
+        );
+    }
 
     if (options.export !== false) {
         try {

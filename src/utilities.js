@@ -143,4 +143,20 @@ module.exports = {
         }
         return new_utilities;
     },
+    ruleColor: (colors) => {
+        var new_utilities = {};
+        for (const property in colors) {
+            const buffer = {};
+            buffer['--ta-column-rule-color'] =
+                'rgba(' +
+                colors[property][0] +
+                ', ' +
+                colors[property][1] +
+                ', ' +
+                colors[property][2] +
+                ', var(--ta-column-rule-opacity))';
+            new_utilities['.rule-' + property] = buffer;
+        }
+        return new_utilities;
+    },
 };
